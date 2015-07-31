@@ -37,12 +37,6 @@ app.use(function * (next) {
 })
 ```
 
-## Disclaimer
-
-  I am not a security expert nor have I done a security audit on this code.
-
-  Use this at your own risk, and if you can think of any ways to make this more secure, let me know!
-
 ## Test
 
 ```
@@ -54,6 +48,12 @@ make test
 
 - **Add a salt**: not sure if this is necessary since the user token is already unique.
 - **Add an expiration**: not sure this is necessary since the cookie has an expiration.
+
+## Disclaimer
+
+  I am not a security expert nor have I done a security audit on this code.
+
+  Use this at your own risk, and if you can think of any ways to make this more secure, let me know!
 
 ## License
 
