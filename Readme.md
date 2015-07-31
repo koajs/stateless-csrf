@@ -11,7 +11,7 @@
 
   This CSRF protection hashes a user's unique cookie against a server-side secret.
 
-  When the request comes in, the server checks hashes the cookie against the server-side
+  When the request comes in, the server hashes the cookie with the server-side
   secret and then compares it to the CSRF token. If it matches, verification is complete
   otherwise, the middleware rejects the request.
 
@@ -49,6 +49,10 @@ app.use(function * (next) {
 npm install
 make test
 ```
+
+## TODO
+
+- Consider adding salt (not sure how this would help since it the user token is already unique)
 
 ## License
 
