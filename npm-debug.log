@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   'stateless-csrf' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 silly mapToRegistry name stateless-csrf
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry https://registry.npmjs.org/
+8 silly mapToRegistry uri https://registry.npmjs.org/stateless-csrf
+9 verbose request uri https://registry.npmjs.org/stateless-csrf
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 4:20:59 PM
+12 verbose request id d70aadfc682b2ce7
+13 http request GET https://registry.npmjs.org/stateless-csrf
+14 http 404 https://registry.npmjs.org/stateless-csrf
+15 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+15 verbose headers   'content-type': 'application/json',
+15 verbose headers   'cache-control': 'max-age=0',
+15 verbose headers   'content-length': '51',
+15 verbose headers   'accept-ranges': 'bytes',
+15 verbose headers   date: 'Fri, 31 Jul 2015 23:20:59 GMT',
+15 verbose headers   via: '1.1 varnish',
+15 verbose headers   age: '0',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'x-served-by': 'cache-sjc3129-SJC',
+15 verbose headers   'x-cache': 'MISS',
+15 verbose headers   'x-cache-hits': '0',
+15 verbose headers   'x-timer': 'S1438384859.227670,VS0,VE90' }
+16 silly get cb [ 404,
+16 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+16 silly get     'content-type': 'application/json',
+16 silly get     'cache-control': 'max-age=0',
+16 silly get     'content-length': '51',
+16 silly get     'accept-ranges': 'bytes',
+16 silly get     date: 'Fri, 31 Jul 2015 23:20:59 GMT',
+16 silly get     via: '1.1 varnish',
+16 silly get     age: '0',
+16 silly get     connection: 'keep-alive',
+16 silly get     'x-served-by': 'cache-sjc3129-SJC',
+16 silly get     'x-cache': 'MISS',
+16 silly get     'x-cache-hits': '0',
+16 silly get     'x-timer': 'S1438384859.227670,VS0,VE90' } ]
+17 verbose stack Error: 404 Not Found: stateless-csrf
+17 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
+17 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+17 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+17 verbose stack     at Request.emit (events.js:110:17)
+17 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+17 verbose stack     at Request.emit (events.js:129:20)
+17 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+17 verbose stack     at IncomingMessage.emit (events.js:129:20)
+17 verbose stack     at _stream_readable.js:908:16
+17 verbose stack     at process._tickCallback (node.js:355:11)
+18 verbose statusCode 404
+19 verbose pkgid stateless-csrf
+20 verbose cwd /Users/matt/Projects/stateless-csrf
+21 error Darwin 14.3.0
+22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "view" "stateless-csrf"
+23 error node v0.12.7
+24 error npm  v2.11.3
+25 error code E404
+26 error 404 Not Found: stateless-csrf
+26 error 404
+26 error 404 'stateless-csrf' is not in the npm registry.
+26 error 404 You should bug the author to publish it (or use the name yourself!)
+26 error 404
+26 error 404 Note that you can also install from a
+26 error 404 tarball, folder, http url, or git url.
+27 verbose exit [ 1, true ]
