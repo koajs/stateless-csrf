@@ -52,7 +52,7 @@ make test
 
 ## TODO
 
-- Consider adding salt (not sure how this would help since it the user token is already unique)
+- Consider adding salt (not sure how this would help since the user token is already unique)
 
 ## License
 
