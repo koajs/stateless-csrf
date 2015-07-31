@@ -12,10 +12,10 @@
   This CSRF protection hashes a user's unique cookie against a server-side secret.
 
   When the request comes in, the server hashes the cookie with the server-side
-  secret and then compares it to the CSRF token. If it matches, verification is complete
-  otherwise, the middleware rejects the request.
+  secret and then compares it to the CSRF token. If it matches, verification is complete,
+  otherwise the middleware rejects the request.
 
-  It's a slight variation on the [double submit cookies](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet#Double_Submit_Cookies) using the advice
+  This is a slight variation on the [double submit cookies](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet#Double_Submit_Cookies) using the advice
   mentioned in [this comment](http://discourse.codinghorror.com/t/preventing-csrf-and-xsrf-attacks/268/61) in [this blog post](http://blog.codinghorror.com/preventing-csrf-and-xsrf-attacks/).
 
 ## Usage
@@ -50,9 +50,10 @@ npm install
 make test
 ```
 
-## TODO
+## Considerations
 
-- Consider adding salt (not sure how this would help since the user token is already unique)
+- **Add a salt**: not sure if this is necessary since the user token is already unique.
+- **Add an expiration**: not sure this is necessary since the cookie has an expiration.
 
 ## License
 
