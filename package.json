@@ -2,19 +2,24 @@
   "name": "stateless-csrf",
   "version": "1.0.0",
   "description": "CSRF without sessions",
-  "keywords": ["csrf", "stateless", "authentication", "cookies"],
+  "keywords": [
+    "csrf",
+    "stateless",
+    "authentication",
+    "cookies"
+  ],
   "author": "Matthew Mueller <mattmuelle@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/koajs/stateless-csrf.git"
   },
   "dependencies": {
-    "hasha": "^1.0.1",
-    "object-assign": "^3.0.0"
+    "hasha": "^2.2.0",
+    "object-assign": "^4.0.1"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
-    "roo": "^0.4.3",
+    "roo": "^0.6.0",
     "should": "*",
     "supertest": "^1.0.1"
   },
