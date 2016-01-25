@@ -2,7 +2,12 @@
   "name": "stateless-csrf",
   "version": "1.0.0",
   "description": "CSRF without sessions",
-  "keywords": ["csrf", "stateless", "authentication", "cookies"],
+  "keywords": [
+    "csrf",
+    "stateless",
+    "authentication",
+    "cookies"
+  ],
   "author": "Matthew Mueller <mattmuelle@gmail.com>",
   "repository": {
     "type": "git",
@@ -15,7 +20,7 @@
   "devDependencies": {
     "mocha": "^2.2.5",
     "roo": "^0.4.3",
-    "should": "*",
+    "should": "8.2.0",
     "supertest": "^1.0.1"
   },
   "main": "index"
